@@ -1,0 +1,118 @@
+@media screen and (max-width: 480px) {
+  .logo {
+    top: 30px;
+    left: 20px;
+  }
+  .icon-menu {
+    right: 20px;
+    top: 30px;
+  }
+  .ibg-bg {
+    display: none;
+  }
+  #cover {
+    visibility: visible !important;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #topArchive-content {
+    top: auto;
+    bottom: 60px;
+    width: 70%;
+    left: 5%;
+  }
+  .menu {
+    width: 80%;
+    margin: 180px auto 0;
+  }
+  .page-wapper {
+    margin: 40px 0;
+  }
+  .article-wapper {
+    width: 90%;
+    padding: 30px 0;
+  }
+  .article-wapper h2 {
+    font-size: 20px;
+  }
+  .article-wapper .describe span.date {
+    display: none;
+  }
+  .content {
+    font-size: 12px !important;
+    margin-top: 20px;
+  }
+  .content h1 {
+    font-size: 24px;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .content h3 {
+    font-size: 16px;
+  }
+  .content hr {
+    margin: 10px 0;
+  }
+  .content blockquote {
+    padding: 8px 10px;
+  }
+  .archive-list-wrapper .archive-list .archive {
+    width: 100%;
+    margin-top: 60px;
+    background: #fff;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .archive-list-wrapper .archive-list .archive a {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+  .archive-list-wrapper .archive-list .archive a img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .archive-list-wrapper .archive-list .archive .archive-content {
+    height: auto;
+    position: static;
+    width: 96%;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+  }
+  .archive-list-wrapper .archive-list .archive .archive-content .archive-time {
+    margin: 30px 0 0 20px;
+  }
+  .archive-list-wrapper .archive-list .archive .archive-content .archive-title {
+    font-size: 24px;
+    margin: 10px 30px 0 20px;
+  }
+  .archive-list-wrapper .archive-list .archive .archive-content .archive-description {
+    margin: 10px 30px 0 20px;
+  }
+  .archive-list-wrapper .archive-list .archive .archive-content .archive-info {
+    position: static;
+    margin: 20px 0 20px 20px;
+  }
+  .relevant-wapper .relevant {
+    width: 90%;
+  }
+  .relevant-wapper .relevant .relevant-header {
+    border-bottom: 0;
+  }
+  .relevant-wapper .relevant .relevant-header em {
+    display: none;
+  }
+  .relevant-wapper .relevant .relevant-list {
+    display: none;
+  }
+  .links-wapper {
+    width: 90%;
+  }
+  ul.links li {
+    width: 100%;
+  }
+}

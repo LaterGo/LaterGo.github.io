@@ -1,0 +1,466 @@
+.article-wapper {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.article-wapper h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  color: #333;
+  line-height: 1.3;
+  position: relative;
+  font-weight: bold;
+}
+.article-wapper .describe {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+.article-wapper .describe span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.article-wapper .describe span em {
+  font-style: normal;
+}
+.article-wapper .content {
+  font-size: 14px;
+  line-height: 2;
+  color: #333;
+}
+.article-wapper .content p {
+  padding: 15px 0;
+}
+.article-wapper .content:before {
+  content: '';
+  height: 1px;
+  width: 100px;
+  background-color: #eee;
+  display: block;
+  margin: 30px auto 40px;
+}
+#comment {
+  margin: 40px 0;
+}
+/*
+ * relevant
+ */
+.relevant-wapper {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+.relevant-wapper .relevant {
+  width: 700px;
+  margin: 0 auto;
+}
+.relevant-wapper .relevant .relevant-header {
+  font-size: 12px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+.relevant-wapper .relevant .relevant-header em {
+  font-style: normal;
+  text-indent: 10px;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+.relevant-wapper .relevant .relevant-header span {
+  position: absolute;
+  right: 0;
+}
+.relevant-wapper .relevant .relevant-header a {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+  margin-left: 14px;
+  display: inline-block;
+}
+.relevant-wapper ul.relevant-list li {
+  list-style-type: none;
+  padding: 25px 0 32px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.relevant-wapper ul.relevant-list li div {
+  display: inline-block;
+}
+.relevant-wapper ul.relevant-list li .article-left {
+  width: 70%;
+  margin-right: 2%;
+  vertical-align: top;
+}
+.relevant-wapper ul.relevant-list li .article-left a {
+  font-size: 22px;
+  color: #333;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.relevant-wapper ul.relevant-list li .article-left p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+.relevant-wapper ul.relevant-list li .article-right {
+  width: 27%;
+}
+.relevant-wapper ul.relevant-list li .article-right img {
+  width: 100%;
+  object-fit: cover;
+}
+/*
+ * #top
+ */
+#top {
+  position: fixed;
+  height: 50px;
+  border-bottom: 1px solid #f7f7f7;
+  background-color: #fefefe;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+#top .scrollbar {
+  position: absolute;
+  height: 2px;
+  width: 0;
+  top: 0;
+  background-color: #50bcb6;
+  transition: width 0.5s ease;
+}
+#top .archive-logo {
+  background-image: url("/assets/images/archive-logo.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 25px;
+  text-indent: -999px;
+}
+#top .subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: normal;
+  display: none;
+}
+.right-iconbar {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  top: 0;
+}
+.right-iconbar a {
+  font-size: 20px;
+  text-decoration: none;
+}
+.right-iconbar .like-this {
+  background: url("/assets/images/heart.png") left no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.right-iconbar .share {
+  position: relative;
+  float: left;
+  padding: 15px 0;
+}
+.right-iconbar .share a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #666;
+}
+.right-iconbar .share .icon-wechat {
+  margin-right: 25px;
+}
+.right-iconbar .heartAnimation {
+  animation-name: heartBlast;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  background-position: right;
+}
+#qrcode {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  display: none;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+#qrcode img {
+  width: 128px;
+  height: 128px;
+  margin: 11px auto;
+}
+/* Post or Page content style */
+.content {
+  margin-top: 50px;
+  font-size: 15px;
+  line-height: 2;
+  color: #232323;
+}
+.content h1 {
+  font-size: 39px;
+}
+.content h2 {
+  font-size: 32px;
+}
+.content h3 {
+  font-size: 26px;
+}
+.content h4 {
+  font-size: 19px;
+}
+.content h5 {
+  font-size: 15px;
+}
+.content h6 {
+  font-size: 13px;
+}
+.content strong {
+  font-weight: 500;
+}
+.content a {
+  background: transparent;
+  color: #1980e6;
+  text-decoration: none;
+}
+.content a:hover {
+  color: #518dca;
+}
+.content hr {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid rgba(102,128,153,0.1);
+}
+.content p {
+  margin: 0 0 0.8em;
+}
+.content ul,
+.content ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.content ul li {
+  list-style: disc;
+  margin: 5px 0;
+}
+.content ol li {
+  list-style: decimal;
+  margin: 5px 0;
+}
+.content > h1,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+.content > h1:first-child,
+.content > h2:first-child,
+.content > h3:first-child,
+.content > h4:first-child,
+.content > h5:first-child,
+.content > h6:first-child {
+  margin-top: 0;
+}
+.content img {
+  cursor: pointer;
+}
+.content pre,
+.content .highlight {
+  background: #2d2d2d;
+  margin: 1.6rem 0;
+  padding: 0.8rem 0.8rem;
+  border-style: solid;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #ccc;
+  line-height: 20px;
+}
+.content .gutter {
+  display: none;
+}
+.content .highlight .gutter pre {
+  color: #666;
+  font-size: 0.9rem;
+}
+.content code,
+.content pre {
+  font-family: "Source Code Pro", monospace;
+}
+.content code {
+  background: rgba(99,99,99,0.07);
+  color: #ef459c;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+.content pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.content blockquote {
+  color: #656565;
+  margin: 0 0 1.1em;
+  border-left: 3px solid #efefef;
+  border-left-width: 6px;
+  background-color: rgba(119,119,119,0.05);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 15px 20px;
+}
+.content blockquote p {
+  margin: 0;
+}
+.content table {
+  margin: 15px 0;
+  border-collapse: collapse;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+.content table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.content table th,
+.content table td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+.content .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.content .highlight td {
+  border: none;
+  padding: 0;
+}
+.content .highlight tr {
+  border: 0;
+}
+.content .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.content .highlight figcaption a {
+  float: right;
+}
+.content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.content .highlight .line {
+  height: 20px;
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag,
+pre .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
+@-moz-keyframes heartBlast {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@-webkit-keyframes heartBlast {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@-o-keyframes heartBlast {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes heartBlast {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
